@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0px 16px;
+  margin: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f7fa;
+}
+
+.login-bg {
+  background: rgb(15, 175, 245);
+  background: linear-gradient(180deg,
+      rgba(15, 175, 245, 1) 0%,
+      rgba(64, 115, 219, 1) 100%);
+}
+
+.login-mobile-bg {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(236, 241, 251, 1) 50%,
+      rgba(64, 115, 219, 1) 100%);
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+
+.rotate2 {
+  transform: rotate(360deg);
+  transition: 0.2s ease-in-out;
+}
+
+.thomas-bg {
+  background: linear-gradient(180deg,
+      rgba(15, 175, 245, 0.15) 0%,
+      rgba(64, 115, 219, 0.15) 100%);
+}
+
+.haji:hover {
+  background: linear-gradient(180deg,
+      rgba(15, 175, 245, 0.15) 0%,
+      rgba(64, 115, 219, 0.15) 100%);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.btn-bg {
+  background: linear-gradient(180deg,
+      rgba(15, 175, 245, 0.15) 0%,
+      rgba(64, 115, 219, 0.15) 100%);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+@layer components {
+  .login-btn {
+    background: rgb(15, 175, 245);
+    background: linear-gradient(90deg,
+        rgba(15, 175, 245, 1) 0%,
+        rgba(64, 115, 219, 1) 100%);
+  }
+
+  .modal_header_bg {
+    background: linear-gradient(180deg,
+        rgba(15, 175, 245, 0.15) 0%,
+        rgba(64, 115, 219, 0.15) 100%);
+  }
+}
+
+
+.ql-snow {
+  border: none;
+}
+
+#toolbar {
+  border: none;
+  outline: none;
+}
+
+.ql-editor {
+  border: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 247 250 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(115 131 145 / var(--tw-text-opacity));
+
+  border-radius: 8px;
+
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 16px 12px;
+  text-transform: capitalize;
+  min-height: 157px;
+  margin: 0 20px;
+}
+
+.ql-container.ql-snow {
+  border: 1px solid transparent !important;
+}
+
+.ql-italic svg {
+  color: #D0D6DA !important;
+}
+
+
+
+.ql-snow .ql-stroke {
+  stroke: #D0D6DA !important;
+  text-decoration: none !important;
+}
+
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: #D0D6DA !important;
+}
